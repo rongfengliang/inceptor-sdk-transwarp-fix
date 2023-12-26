@@ -5,13 +5,12 @@
 
 package org.apache.hadoop.hive.common.type;
 
+import org.apache.hive.common.util.DateParser;
+
 import java.sql.Date;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.TimeZone;
-import org.apache.hadoop.hive.common.GlobalHiveConf;
-import org.apache.hadoop.hive.conf.HiveConf.ConfVars;
-import org.apache.hive.common.util.DateParser;
 
 public class HiveDate extends Date {
     private static boolean dateShowTime = isDateShowTime();
